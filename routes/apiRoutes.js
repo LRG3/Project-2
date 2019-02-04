@@ -1,17 +1,23 @@
 var path = require("path");
+var express = require("express")
+var app = express()
 
 module.exports = function(app) {
-  // Get all examples
-  app.get("/api/examples", function(req, res) {
-    db.Example.findAll({}).then(function(raven_db) {
-      res.json(dbExamples);
-    });
+	app.get("/", function(req, res) {
+    res.render("index")
   });
+  // Get all examples
+  // app.get("/api/examples", function(req, res) {
+  //   db.Example.findAll({}).then(function(raven_db) {
+  //     res.json(dbExamples);
+  //   });
+  };
+  
 
   // Create a new example
   app.post("/api/examples", function(req, res) {
     db.Example.create(req.body).then(function(raven_db) {
-      res.json(dbExample);
+      res.json(raven_db);
     });
   });
 
@@ -21,4 +27,3 @@ module.exports = function(app) {
       res.json(raven_db);
     });
   });
-};
