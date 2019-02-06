@@ -1,13 +1,13 @@
 # Project-2
 
-• Project Name – Raven – A Gamer’s Bodyguard!
+• Project Name – Raven – A Music Lover's Connection!
 
 • Team Members – Jon Cruz, Malorie Wright, Phongsavanh Xayvongsack (Sushi), and Robert Gonzalez
 
-• Application Description – Raven – A Gamers Bodyguard! is a Personal Private Investigator that can be plugged in to any social media community. Raven is your pock size Internet Security app. Raven – A Gamers Bodyguard! Will alleviate the worries of being a victim of spam, bots, fake accounts and much more! Only Raven end-users can access Raven’s robust screening database for a monthly membership fee to gamers/social media poster/bloggers/youtubers/ who are worried of being “Catfished” or something worse! The higher levels of membership, the more functions Raven can provide. Raven – A Gamer’s Bodyguard is an end-user’s internet security solution!
+• Application Description – Raven - A Music Lover's Connection! Raven is an app where music lovers come to search music, plan a concert adventure, and make new friends! Raven is a search engine with functions to bring people together. Raven is your pock size gateway to meeting new people with common music taste. 
 
 • Sketch of Final Product:
 
-• APIs- XBOX API, Email Validator, more research currently.
+• APIs- Spotify API and TicketMaster Discover API.
 
-• Functions: a. New member will register in Raven’s application and be uploaded to the screening database. b. New Raven member can enter corrupt or unsecure user information into app and will be crosschecked database via API using Node.js and Express to confirm is spam, bots, fake accounts. c. Once information is confirmed to be fake, a warning will populate for Raven member with information and comments about this fake account/bot/spam. d. Gathers all positive and negative information and pushes up into secure database and grows as membership increase. 
+• Functions: a. New member will register in Raven’s application and a profile will be created and uploaded to the member's database. b. New Raven member can enter artist and/or song to be find information using Spotify API. c. Search history will log on members profile in database. d. Search results will use Node.js and Express functions with Ticket Master Discover API in order to pull concert dates and prices. e. Raven will have a button that will say "Want a buddy to join you at the concert?". This were a module will generate with other users that share common music interest. 
