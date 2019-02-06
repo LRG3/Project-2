@@ -7,10 +7,11 @@ var db = require("./models");
 var app = express();
 var PORT = process.env.PORT || 8083;
 
+app.use(express.static("public"));
+
 // Middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static("public"));
 
 // Handlebars
 app.engine(
@@ -37,7 +38,7 @@ if (process.env.NODE_ENV === "test") {
 db.sequelize.sync(syncOptions).then(function() {
   app.listen(PORT, function() {
     console.log(
-      "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
+      "Listening on port %s. Visit http://localhost:%s/ in your browser.",
       PORT,
       PORT
     );

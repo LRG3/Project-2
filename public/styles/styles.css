@@ -1,3 +1,29 @@
-.list-group-item {
-  line-height: 2.5;
+body,h1 {font-family: "Raleway", sans-serif}
+
+body, html {
+ height: 100%;
+ background-image: URL("../img/background.jpg") ;
+ background-image: stretch;
+ min-height: 100%;
+ background-position: center;
+ background-size: cover;
+}
+
+.spotifyForm, .ugly {
+ margin-left: 200px;
+}
+
+.bigBird {
+ margin-top: 50px;
+ background-color: rgb(141, 90, 141);
+ width: 900px;
+ height: 450px;
+}
+
+body {
+  background-color: rgba(20, 20, 20, 0.801);
+}
+.divider {
+    margin-bottom: 100px;
+
 }
