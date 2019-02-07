@@ -1,4 +1,7 @@
 body,h1 {font-family: "Raleway", sans-serif}
+h1, h2, h3, h4, h5, h6 {
+  color: white
+}
 
 body, html {
  height: 100%;
@@ -13,11 +16,13 @@ body, html {
  margin-left: 200px;
 }
 
+.theName {
+  text-align: center;
+  background-color: rgba(53, 53, 53, 0.801)
+}
 .bigBird {
- margin-top: 50px;
- background-color: rgb(141, 90, 141);
- width: 900px;
- height: 450px;
+ background-color: rgba(44, 0, 44, 0.5);
+ height: 100%;
 }
 
 body {
@@ -27,3 +32,60 @@ body {
     margin-bottom: 100px;
 
 }
+
+body {
+  width: 100%;
+  height: 100%
+}
+
+.wholeThing {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.middle {
+  align-items: center;
+  height: 55%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.bottom {
+  margin-top: auto;
+  height: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(12, 10, 10, 0.5)
+}
+
+.leftSide {
+  align-items: center;
+  height: 100%;
+  width: 25%
+}
+
+.center {
+  height: 100%;
+  width: 50%;
+}
+.rightSide {
+  height: 100%;
+  width: 25%
+}
+
+button {
+  margin-top: 10%;
+  color: white;
+  background-color: rgba(44, 0, 44, 0.7);
+}
+
