@@ -6,7 +6,7 @@ $(document).ready(function () {
         var newUser = {
             userName : $("#userName").val().trim(),
             password : $("#userPassword").val().trim(),
-            email : $("#userEmail").val().trim()
+            email : $("#userEmail").val().trim(),
         }
         $.ajax("/redirected/newUser", {
             type: "POST",
