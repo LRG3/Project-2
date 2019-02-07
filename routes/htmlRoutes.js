@@ -1,5 +1,4 @@
 var axios = require("axios")
-var orm = require("../models/index")
 
 module.exports = function (app) {
   app.get("/", function (req, res) {
@@ -47,7 +46,6 @@ module.exports = function (app) {
           Authorization: "Bearer " + response.data.access_token
         }
       }).then(function (response) {
-        console.log(response)
         var userName = response.data.display_name
         res.redirect("/redirected")
       })

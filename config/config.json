@@ -1,14 +1,14 @@
 {
   "development": {
     "username": "root",
-    "password": "fallenpotato",
+    "password": "Chloe",
     "database": "raven_db",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "fallenpotato",
+    "password": "Chloe",
     "database": "raven_db",
     "host": "localhost",
     "dialect": "mysql",

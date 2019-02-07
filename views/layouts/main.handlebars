@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Raven - A Music Lover's Connection</title>
-    <script src="../public/js/index.js">
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <title>Raven - A Music Lover's Connection</title>
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src = "js/index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
-      
+
 </head>
+
 <body>
-  {{{body}}}
-</body>
+
+    <canvas class="background"></canvas>
+    {{{body}}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+    <script>
+        window.onload = function() {
+            console.log("working")
+    Particles.init({
+            selector: '.background', 
+        color: '#FFF',
+        minDistance: '120px'
+      });
+    };
+    </script>
+</body> 
+
 </html>
