@@ -4,9 +4,9 @@ $(document).ready(function () {
         event.preventDefault()
         console.log('fiveminutes');
         var newUser = {
-            userName : $("#userName").val().trim(),
-            password : $("#userPassword").val().trim(),
-            email : $("#userEmail").val().trim(),
+            userName: $("#userName").val().trim(),
+            password: $("#userPassword").val().trim(),
+            email: $("#userEmail").val().trim(),
         }
         $.ajax("/redirected/newUser", {
             type: "POST",

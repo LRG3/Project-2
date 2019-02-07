@@ -20,7 +20,6 @@ module.exports = function (app) {
 
   app.get("/callback", function (req, res) {
     var redirectUrl = "http://localhost:8083/callback"
-    console.log(Buffer.from("873845158fb34ac39c8fedba710f1354:d0d6e4bcd8014736b1de3b4d1cc2d35b").toString("base64"))
 
     var requestData = {
       grant_type: "authorization_code",
@@ -53,6 +52,18 @@ module.exports = function (app) {
     })
 
   })
+
+  app.get("/redirected/playlist", function(req, res) {
+    var redirectUrl = "http://localhost:8083/callback"
+
+    var requestData = {
+      grant_type: "authorization_code",
+      code: req.query.code,
+      redirect_uri: redirectUrl
+    }
+    res.json(requestData)
+  })
+
 
 }
 
