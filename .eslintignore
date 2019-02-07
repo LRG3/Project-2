@@ -1,2 +1,8 @@
 models/index.js
 node_modules
+config
+models
+public
+routes
+views
+server.js
