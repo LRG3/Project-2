@@ -46,16 +46,12 @@ module.exports = function (app) {
           Authorization: "Bearer " + response.data.access_token
         }
       }).then(function (response) {
-        var userName = response.data.display_name
-        res.redirect("/redirected")
+        var userName = response.data
+
+        res.render("login", userName)
       })
     })
 
-  })
-
-
-  app.get("/redirected", function(req, res) {
-    res.render("login")
   })
 
 }
