@@ -1,14 +1,10 @@
-var Sequelize = require("sequelize");
-var sequelize = require("../config/connection");
-
-var User = sequelize.define("users", {
-  userName: Sequelize.STRING,
-  password: Sequelize.STRING,
-  email: Sequelize.STRING,
-  spotifyId: Sequelize.STRING
-});
-
-User.sync();
-
-module.exports = User;
-
+module.exports = function (sequelize, DataTypes) {
+  var User = sequelize.define("User", {
+    userName: DataTypes.STRING,
+    password: DataTypes.STRING,
+    email: DataTypes.STRING,
+    spotifyId: DataTypes.STRING,
+    playlists: DataTypes.JSON
+  });
+  return User
+}
