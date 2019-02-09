@@ -7,7 +7,7 @@ module.exports = function (app) {
 
   app.get("/login", function (req, res) {
     var scopes = "user-read-private user-read-email playlist-read-private"
-    var redirectUrl = "http://localhost:8083/callback"
+    var redirectUrl = "https://aqueous-everglades-38664.herokuapp.com/callback"
     var clientId = "873845158fb34ac39c8fedba710f1354"
 
     res.redirect("https://accounts.spotify.com/authorize" +
@@ -19,7 +19,7 @@ module.exports = function (app) {
 
 var username = ""
   app.get("/callback", function (req, res) {
-    var redirectUrl = "http://localhost:8083/callback"
+    var redirectUrl = "https://aqueous-everglades-38664.herokuapp.com/callback"
 
     var requestData = {
       grant_type: "authorization_code",
